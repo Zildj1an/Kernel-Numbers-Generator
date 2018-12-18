@@ -16,7 +16,7 @@ You can also configure and check the module parameters with the auxiliar entry /
 Usage: Compile, load the module, access via cat and echo to /proc/modtimer2. The first process to open and write from the file will receive even numbers randomly generated, while the second one will be feed with odd digits.
 
 
-
+```bash
 
     $ make
 
@@ -31,3 +31,4 @@ Usage: Compile, load the module, access via cat and echo to /proc/modtimer2. The
     ...
 
 
+```
