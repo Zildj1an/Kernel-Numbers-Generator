@@ -2,9 +2,9 @@
 
 [EN] 
 
-This code merges many interesting concepts regarding Linux kernel modules development in a single /proc entry.
+This code merges many interesting concepts regarding Linux kernel modules development in only two /proc entries.
 
-It`s a SMP-Safe implementation of a random digits Linux kernel module generator (even or odd).
+It`s a SMP-Safe implementation of a Linux kernel module - random digits generator (even or odd).
 
 Particularly interesting in terms of coding since:
 
@@ -16,7 +16,6 @@ Particularly interesting in terms of coding since:
 You can also configure and check the module parameters with the auxiliar entry /proc/modconfig
 
 Usage: Compile, load the module, access via cat and echo to /proc/modtimer2. The first process to open and write from the file will receive even numbers randomly generated, while the second one will be feed with odd digits.
-
   $ make
 
   $ sudo insmod modtimer.ko
