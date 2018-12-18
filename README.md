@@ -6,7 +6,7 @@ It`s a SMP-Safe implementation of a Linux kernel module - random digits generato
 
 Particularly interesting in terms of coding since:
 
-1. It manages a kernel doubly-linked list with ghost node.
+1. It manages a kernel doubly-linked list with ghost node (read more about them at https://github.com/Zildj1an/Linux-Linked-Lists)
 2. It employs kernel interruptions to fill a kernel circular buffer (configurable intervals)
 3. It uses sempahores and special kernel mutexes called spin-locks which are required for a code with CPU interruptions.
 4. It uses private work-queues to schedule CPU work (in this case, empty the linked list)
