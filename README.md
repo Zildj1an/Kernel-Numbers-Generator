@@ -1,6 +1,6 @@
 # Kernel-Module-Numbers-Generator
 
-This code merges many interesting concepts regarding Linux kernel modules development in only two /proc entries.
+👨‍🔧 This code merges many interesting concepts regarding Linux kernel modules development in only two /proc entries.
 
 It`s a SMP-Safe implementation of a Linux kernel module - random digits generator (even or odd).
 
