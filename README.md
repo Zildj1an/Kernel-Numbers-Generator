@@ -8,7 +8,7 @@ Particularly interesting in terms of coding since:
 
 * It manages a kernel doubly-linked list with ghost node (read more about them at  <a href="https://github.com/Zildj1an/Linux-Linked-Lists">my repo</a>)
 * It employs kernel interruptions to fill a kernel circular buffer (configurable intervals)
-* It uses sempahores and special kernel mutexes called spin-locks which are required for a code with CPU interruptions.
+* It uses semaphores and special kernel mutexes called spin-locks which are required for a code with CPU interruptions.
 * It uses private work-queues to schedule CPU work (in this case, empty the linked list)
 
 You can also configure and check the module parameters with the auxiliar entry /proc/modconfig
