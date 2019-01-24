@@ -19,7 +19,7 @@ Compile, load the module, access via cat and echo to /proc/modtimer2. The first 
 
 ```bash
 
-    $ make
+    $ make # make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
     $ sudo insmod modtimer.ko
 
