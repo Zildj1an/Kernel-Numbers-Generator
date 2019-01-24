@@ -33,3 +33,4 @@ Compile, load the module, access via cat and echo to /proc/modtimer2. The first 
 
 
 ```
+You can check it worked with <i> $sudo lsmod | head </i>and reading <i>$sudo dmesg</i> 
