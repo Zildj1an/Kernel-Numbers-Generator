@@ -1,7 +1,7 @@
 # Kernel-Module-Numbers-Generator [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://opensource.org/licenses/GPL-3.0/)
   <p align="center">
   <span>Language:</span> 
-  <a href="">Español</a> |
+  <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator/blob/master/LEEME.md">Español</a> |
   <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator">English</a> 
 </p>
 
