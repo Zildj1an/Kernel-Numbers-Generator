@@ -2,7 +2,7 @@
   <p align="center">
   <span>Language:</span> 
   <a href="">Español</a> |
-  <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator">English</a> |
+  <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator">English</a> 
 </p>
 
 👨‍🔧 This kernel module merges many interesting concepts regarding Linux kernel modules development in only two /proc entries.
