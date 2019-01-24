@@ -5,7 +5,7 @@
   <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator">English</a> 
 </p>
 
-👨‍🔧 This kernel module merges many interesting concepts regarding Linux kernel modules development in only two /proc entries.
+👨‍🔧 This kernel module merges many interesting concepts regarding Linux and Android kernel modules development in only two /proc entries.Needless to say, it does not include any standard C library.
 
 It`s a SMP-Safe implementation of a Linux kernel module - random digits generator (even or odd).
 
