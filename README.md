@@ -1,4 +1,5 @@
 # Kernel-Module-Numbers-Generator [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.png?v=103)](https://opensource.org/licenses/GPL-3.0/)
+# English README 
 
 👨‍🔧 This kernel module merges many interesting concepts regarding Linux kernel modules development in only two /proc entries.
 
