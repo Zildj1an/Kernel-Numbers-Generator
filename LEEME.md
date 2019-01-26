@@ -45,3 +45,6 @@ Puedes comprobar que funcióno con <i> $sudo lsmod | head </i> y leyendo <i>$sud
 Simplemente usa <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator/blob/master/Makefile_Android">Makefile</a> para recompilar.
 Ojo: Ese Makefile usa un kernel Android x-86 <a href= "https://www.android.com/versions/oreo-8-0/"> versión oreo</a> compilado.
 
+## Licencia
+Este proyecto tiene la licencia GNU-GPL - ver <a href="https://github.com/Zildj1an/Kernel-Numbers-Generator/blob/master/LICENSE">LICENSE.md</a> para más detalles.
+
