@@ -10,8 +10,8 @@ ssize_t modconfig_write(struct file *f,const char *b, size_t s, loff_t *l){
 	int n;
 
 	if(s > KBUF_SIZE) return -EFBIG;
-	if (copy_from_user(kbuf, b, s) > 0) return -EINVAL;
-	if((*l > 0)) return 0;
+	if (copy_from_user(kbuf, b, s)) return -EINVAL;
+	if(*l) return 0;
 
 	if(sscanf(kbuf, "timer_period_ms %d", &n) == 1) timer_period_ms = n;
 	else if (sscanf(kbuf, "emergency_threshold %d", &n) == 1) emergency_threshold = n;
@@ -28,7 +28,7 @@ ssize_t modconfig_read(struct file *f, char __user *b, size_t l, loff_t *o){
 	char kbuf[KBUF_SIZE];
 	int read,t,e,m;
 
-	if ((*o) > 0) return 0; //Previously invoked!
+	if (*o) return 0; //Previously invoked!
 
 	t = timer_period_ms; e = emergency_threshold; m = max_random;
 	read = sprintf(kbuf,"timer_period_ms = %i\nemergency_threshold = %i\nmax_random = %i\n",t,e,m);
@@ -269,7 +269,7 @@ nomem:
 
 void modtim_exit(void){
 
-	while(module_refcount(THIS_MODULE) > 0){} /* Module won't be unloaded while a program is using it */
+	while(module_refcount(THIS_MODULE)){} /* Module won't be unloaded while a program is using it */
 
 	kfifo_free(&cbuffer);
 	removeList(&even_ghost_node);
