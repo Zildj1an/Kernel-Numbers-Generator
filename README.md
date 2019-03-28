@@ -40,7 +40,7 @@ Compile, load the module, access via cat and echo to /proc/modtimer2. The first 
 ```
 You can check it worked with <i> $sudo lsmod | head </i>and reading <i>$sudo dmesg</i> 
 
-## Loading module in Android's Kernel
+## Loading module into Android's Kernel
 
 The module was developed for Debian, but the can be easily used in Android.
 You just need to use the <a href="https://github.com/Zildj1an/Kernel-Module-Numbers-Generator/blob/master/Makefile_Android">Makefile</a> for re-compiling. Please notice that the Makefile employs a compiled Android-x86 kernel <a href= "https://www.android.com/versions/oreo-8-0/"> oreo version </a>
